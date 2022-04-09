@@ -6,6 +6,7 @@
 
 
 # Download artifacts from a specific pipeline.
+steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     source: 'specific'
