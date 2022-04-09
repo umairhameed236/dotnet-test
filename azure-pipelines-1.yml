@@ -6,9 +6,11 @@
 
 
 # Download artifacts from a specific pipeline.
-- task: DownloadPipelineArtifact@2
-  inputs:
-    source: 'specific'
-    project: 'Dotnet'
-    pipeline: umairhameed236.dotnet-test
-    runVersion: 'latest'
+
+steps:
+  - task : DownloadPipelineArtifact@2
+    inputs : 
+     source: 'specific'
+     project: 'Dotnet'
+     pipeline: umairhameed236.dotnet-test
+     runVersion: 'latest'
