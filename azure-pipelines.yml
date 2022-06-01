@@ -32,11 +32,11 @@ stages:
   jobs:
      - job: 
        steps:  
-        - task: DotNetCoreCLI@2
-          displayName: 'dotnet restore'
-          inputs:
-            command: 'restore'
-            projects: '*.sln'
+        # - task: DotNetCoreCLI@2
+        #   displayName: 'dotnet restore'
+        #   inputs:
+        #     command: 'restore'
+        #     projects: '*.sln'
 
         - task: DotNetCoreCLI@2
           displayName: Build
